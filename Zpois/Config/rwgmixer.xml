@@ -1,0 +1,21 @@
+<config>
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialOldGroup']">
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+	</append>
+
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialNewGroup']">
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+	</append>
+
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='commercialGroup']">
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+	</append>
+
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='downtownGroup']">
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+	</append>
+
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']">
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+	</append>
+</config>
