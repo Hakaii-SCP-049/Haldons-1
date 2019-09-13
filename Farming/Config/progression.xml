@@ -1,0 +1,7 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='1']/@tags">,Farm Table,Old Stone Well,Grain Processor,Scythe,Rusty Frying Pan,Wine Cask,Dairy Churn,Chicken Coop,Rustic Smoker,Webber Grill,Butcher Table,Pig,Fertile Egg,Pitchfork,Butcher Knife,Piglet,Cow,Calfling</append>
+
+
+</configs>
+
