@@ -1,0 +1,27 @@
+<potato>
+	<append xpath="/buffs">
+
+		<buff name="buffExplosiveRound">
+			<damage_type value="disease"/>
+			<stack_type value="replace"/>
+			<duration value="1"/>
+			<effect_group><!--
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Mods.unity3d?ExplosiveShot" local_offset="0,0.3,0" parent_transform="Hips"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" target="self" parent_transform="Hips" prefab="#@modfolder:Resources/Mods.unity3d?ExplosiveShot"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" target="self" parent_transform="Hips" prefab="#@modfolder:Resources/Mods.unity3d?ExplosiveShot"/>-->
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="5" buff="buffExplosiveRoundAOE"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="85"/>
+			</effect_group>
+		</buff>
+		<buff name="buffExplosiveRoundAOE">
+			<damage_type value="disease"/>
+			<stack_type value="replace"/>
+			<duration value="1"/>
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="60"/>
+			</effect_group>
+		</buff>
+
+	</append>
+</potato>
+		

@@ -1,0 +1,261 @@
+		
+<configs>
+
+<!-- Notes: only use  perks at this time, attributes changes or additions will result in modified or added categories --> 
+
+<!-- data reference for shotgun items
+
+<item name="gunPumpShotgun">
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,perkShotgunMessiah"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="5"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab"/>
+	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> 
+	<property name="CrosshairUpAfterShot" value="true"/> 
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> 
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> 
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Shotguns"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="EconomicValue" value="600"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.8"/> 
+		<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug"/>
+		<property name="Reload_time" value="2.6"/>
+		<property name="Sound_start" value="pump_shotgun_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="ScopeOffset" value="-0.00062,0.088,0.065"/>
+		<property name="SideOffset" value="0,0,0"/>
+		<property name="BarrelOffset" value="0,0,0"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+		<property name="ScopeCameraOffset" value="0,-.005,0"/>
+	</property>
+
+	<effect_group name="Base Effects"> 
+		<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="60"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+	
+
+		<passive_effect name="KickDegreesVertical" operation="base_set" value="4.2"/>
+		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-2.5,2.5"/>
+		<display_value name="dRecoil" value="42" />
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="2500,4500" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="9"/>
+	</effect_group>
+</item>
+
+-->
+
+
+<!-- the following are old A16 Perks from vanilla and mods 
+
+
+
+	<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="1" group="firearms">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/></level_requirements>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1" />
+			<multiply skill_level="1" value="2" />
+			<multiply skill_level="2" value="3" />
+			<multiply skill_level="3" value="4" />
+			<multiply skill_level="4" value="5" />
+			<multiply skill_level="5" value="10" />
+		</effect>
+	</perk> -->
+
+ <set xpath="/progression/level/@skill_points_per_level">2</set> 
+  
+  <set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">.2,8</set> 
+  
+  
+  <!--================================
+	OTHER INCLUSIONS AND FIXES FOR PERKS - (of course 'fix' is subjective)
+	================================ 
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='4']/@value">5</set>
+
+	
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="plantedSnowberry1"/>
+	</append>
+
+
+
+ ================================
+	END OF OTHER INCLUSIONS AND FIXES FOR PERKS
+	================================ -->
+
+
+
+<!-- below is embedded WHOLE perks -->
+
+<append xpath="/progression/perks">
+
+	<perk name="perkThisIsMyRifle" parent="skillMarksmanship" name_key="perkThisIsMyRifleName" desc_key="perkThisIsMyRifleDesc" base_skill_point_cost="1" min_level="0" max_level="5" icon="ui_game_symbol_rifle">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/></level_requirements>
+
+		<effect_group>
+		<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.1,0.5" level="1,5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.15,0.35" level="1,5"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="SpreadDegreesVertical" operation="perc_subtract" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_subtract" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="KickDegreesVertical" operation="perc_subtract" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="KickDegreesHorizontal" operation="perc_subtract" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_subtract" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".05,.10,.2,.3,.45" level="1,2,3,4,5" tags="arm,leg"/>
+				
+			<effect_description level="1" desc_key="perkThisIsMyRifleRank1Desc"/>
+			<effect_description level="2" desc_key="perkThisIsMyRifleRank2Desc"/>
+			<effect_description level="3" desc_key="perkThisIsMyRifleRank3Desc"/>
+			<effect_description level="4" desc_key="perkThisIsMyRifleRank4Desc"/>
+			<effect_description level="5" desc_key="perkThisIsMyRifleRank5Desc"/>
+		</effect_group>
+		
+		
+	</perk>
+	
+
+	<perk name="perkWilliamTell" parent="skillMarksmanship" name_key="perkWilliamTellName" desc_key="perkWilliamTellDesc" base_skill_point_cost="1" min_level="0" max_level="3" icon="ui_game_symbol_map_cursor">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+
+		<effect_group>
+		<requirement name="HoldingItemHasTags" tags="perkArchery"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.9" level="1,3" tags="head"/>
+			<passive_effect name="DismemberChance" operation="base_add" value="0.15,0.89" level="1,3" tags="head"/>
+			<passive_effect name="MaxRange" operation="perc_add" value="0.1,0.3" level="1,3"/>
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value="0.1,0.8" level="1,3"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="bowDrawPenalty"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.25,0.99" level="1,3"/>
+		</effect_group>
+		<effect_group>
+			<effect_description level="1" desc_key="perkWilliamTellRank1Desc"/>
+			<effect_description level="2" desc_key="perkWilliamTellRank2Desc"/>
+			<effect_description level="3" desc_key="perkWilliamTellRank3Desc"/>
+		</effect_group>
+	</perk>	
+	
+	<perk name="perkExplosiveWeaponsX" parent="skillMarksmanship" name_key="perkExplosiveWeaponsName" desc_key="perkExplosiveWeaponsDesc" icon="ui_game_symbol_explosion">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/></level_requirements>
+
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkExplosiveWeapons"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="0.1,0.5" level="1,5"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.15,0.35" level="1,5"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".05,.1,.2,.3,.65" level="1,2,3,4,5"/>
+
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="0.2,0.5" level="1,5"/>
+			<passive_effect name="MaxRange" operation="perc_add" value="0.15,3.25" level="3,5"/>
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value="0.1,0.2" level="3,5"/>
+			<effect_description level="1" desc_key="perkExplosiveWeaponsRank1Desc"/>
+			<effect_description level="2" desc_key="perkExplosiveWeaponsRank2Desc"/>
+			<effect_description level="3" desc_key="perkExplosiveWeaponsRank3Desc"/>
+			<effect_description level="4" desc_key="perkExplosiveWeaponsRank4Desc"/>
+			<effect_description level="5" desc_key="perkExplosiveWeaponsRank5Desc"/>
+			<!-- Arrow gravity still in progress -->
+		</effect_group>
+	</perk>
+	
+	<perk name="perkHeadshotY" parent="skillMarksmanship" name_key="perkHeadshotName" desc_key="perkHeadshotDesc" icon="ui_game_symbol_head_shot">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/></level_requirements>
+
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="ranged"/>
+			<requirement name="HoldingItemHasTags" tags="shotgun" invert="true"/>
+			
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2,3" level="1,5" tags="head"/>
+			<passive_effect name="DismemberChance" operation="base_add" value=".05,.1,.2,.3,.85" level="1,2,3,4,5" tags="head"/>
+			<effect_description level="1" desc_key="perkHeadshotRank1Desc"/>
+			<effect_description level="2" desc_key="perkHeadshotRank2Desc"/>
+			<effect_description level="3" desc_key="perkHeadshotRank3Desc"/>
+			<effect_description level="4" desc_key="perkHeadshotRank4Desc"/>
+			<effect_description level="5" desc_key="perkHeadshotRank5Desc"/>
+		</effect_group>
+	</perk>	
+	
+<perk name="perkHeadshotX" parent="skillMarksmanship" name_key="perkHeadshotName" desc_key="perkHeadshotDesc" icon="ui_game_symbol_head_shot">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="1" desc_key="reqPerceptionLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="3" desc_key="reqPerceptionLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="shotgun" />
+				
+				<passive_effect name="DamageModifier" operation="perc_add" value="0.2,1" level="1,5" tags="head" />
+				<passive_effect name="DismemberChance" operation="base_add" value=".05,.1,.15,.2,.25" level="1,2,3,4,5" tags="head"/>
+				<effect_description level="1" desc_key="perkHeadshotRank1Desc" />
+				<effect_description level="2" desc_key="perkHeadshotRank2Desc" />
+				<effect_description level="3" desc_key="perkHeadshotRank3Desc" />
+				<effect_description level="4" desc_key="perkHeadshotRank4Desc" />
+				<effect_description level="5" desc_key="perkHeadshotRank5Desc" />
+			</effect_group>
+			
+			
+		</perk>	
+	
+	</append>
+
+
+
+				
+	
+</configs>
