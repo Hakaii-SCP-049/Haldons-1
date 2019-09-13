@@ -1,0 +1,451 @@
+<configs>
+
+
+	<!-- <property name="MultiBlockDim" value="3,2,1"/> -->
+
+	
+
+
+	<append xpath="/blocks/block[@name='commercialDoor1_v1']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	
+	</append>
+	<append xpath="/blocks/block[@name='commercialDoor1_v2']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>	
+	<append xpath="/blocks/block[@name='commercialDoor1_v3']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='commercialDoor2_v1']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>	
+	<append xpath="/blocks/block[@name='commercialDoor2_v2']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='commercialDoor2_v3']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>	
+	<append xpath="/blocks/block[@name='commercialDoor4_v1']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='commercialDoor4_v2']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='commercialDoor4_v3']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='houseFrontDoor1_v1']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='houseFrontDoor1_v2']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='houseFrontDoor1_v3']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>	
+	<append xpath="/blocks/block[@name='houseFrontDoor2_v1']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='houseFrontDoor2_v2']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>	
+	<append xpath="/blocks/block[@name='houseFrontDoor2_v3']">
+	<drop event="Harvest" name="resourceDoorKnob" count="2" prob="0.7" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceBrassHinge" count="2" prob="1" tag="allHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='airConditioner']">
+	<drop event="Harvest" name="brassValve" count="2" prob="0.7" tag="salvageHarvest"/>
+	</append>		
+<!--================================
+	ASSIGN ECONOMIC VALUES AND REPAIR MATERIALS TO MOST ITEMS ADDED TO TRADERS
+	Also fix the odd other property; ie.DescriptionKey
+	TO-DO: Tweak Economic Values, Tweak Probablilities/Groups.
+	================================ -->
+	
+	
+	
+
+	<append xpath="/blocks/block[@name='cntWallOven']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='utilitySink']">
+		<property class="RepairItems"> <property name="resourceMetalPipe" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='wallHungSink']">
+		<property class="RepairItems"> <property name="resourceMetalPipe" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='mirror']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceWood" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='showerHead']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntMedicineCabinetFaucetOpen']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+		<property name="EconomicValue" value="44"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntMedicineCabinetOpen']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceMetalPipe" value="1"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntNightstandOpen']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceWood" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='radiatorHouse01']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='schoolDesk']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceWood" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='tv']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceElectricParts" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='shoppingBasketEmpty']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapPolymers" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='leatherCouchSofa2']">
+		<property class="RepairItems"> <property name="resourceLeather" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='barracksChair']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='paintingBen']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceWood" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntCharcoalGrillOpen']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntGasGrillOpen']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='gurneyBed']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntLaundryBasketVer1Empty']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapPolymers" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntFancyGarbageCan']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntDumpster']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='tire']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapPolymers" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntWaterCoolerBottle']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='satelliteDish']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='graveStone01']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceConcreteMix" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='decoStationaryBike']">
+		<property name="EconomicValue" value="144"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='decoTreadmill']">
+		<property name="EconomicValue" value="144"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='decoWeightBar']">
+		<property name="EconomicValue" value="144"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggageMediumOpen']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntWeaponsBagSmall']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntSuitcase']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntBackpack01']">
+		<property name="EconomicValue" value="24"/>
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='airConditionVentFan']">
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+
+	<append xpath="/blocks/block[@name='ductSoft']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='ductControlPanel']">
+		<property name="EconomicValue" value="14"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+
+	<append xpath="/blocks/block[@name='commercialBlindsTop']">
+		<property class="RepairItems"> <property name="resourceCloth" value="4"/> </property>
+	</append>
+
+	<append xpath="/blocks/block[@name='signRoadArrowheadApache']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntLootChestHero']">
+		<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntHardenedChestSecure']">
+		<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='controlPanelBase01']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapIron" value="4"/> </property>
+	</append>
+
+	<!-- assiging/fixing EconomicValue and Repair Materials of items already included in Traders -->
+	<append xpath="/blocks/block[@name='cntWaterCoolerFull']">
+		<property name="EconomicValue" value="44"/>
+		<property class="RepairItems"> <property name="resourceScrapPolymers" value="4"/> </property>
+	</append>
+	<append xpath="/blocks/block[@name='cntBookcaseFull']">
+		<property name="EconomicValue" value="24"/>
+	</append>
+
+<!--================================
+	FIX SNOWBERRY GROWTH STATE
+	================================ -->
+	<set xpath="/blocks/block[@name='plantedSnowberry2']/property[@name='PlantGrowing.Next']/@value">plantedSnowberry3HarvestPlayer</set>
+
+<!--================================
+	MORE FUNITURE PICK-UPS
+	TO-DO: I'd like to figure out a way to limit this to within Land-Claim
+	TO-DO: Try to find a way for a Take-Delay on Bedroll to work.
+	================================ -->
+
+
+<!--================================
+	ADD CRAFTABLE & WORKING APPLIANCES (CAMPFIRE SUBSTITUTES)
+	TO-DO: Make electric oven and microwave use electricity.
+	?APPLIANCES: Other Appliances?: Fridge??, Washing Machine (slowly repair clothes?), Trash Compactor (actually destroy stuff)?, AirConditioner/Radiator (create Heat/Cooling)
+	================================ -->
+
+	<append xpath="/blocks">
+	
+		
+		<block name="Home Campfire Helper">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="Campfire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Texture" value="191"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="HeatMapStrength" value="1.5"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property class="Workstation">
+				<property name="Modules" value="tools,output,fuel,input"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+				<property name="CraftingAreaRecipes" value="campfire"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+			<property name="CraftActionName" value="lblContextActionCook"/>
+			<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+			<property name="OpenSound" value="campfire_open"/>
+			<property name="CloseSound" value="campfire_close"/>
+			<property name="CraftSound" value="campfire_cook_click"/>
+			<property name="CraftCompleteSound" value="campfire_complete_item"/>
+			<property name="WorkstationJournalTip" value="campfireTip"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+				<property name="resourceElectricParts" value="4"/>
+			</property>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="DescriptionKey" value="campfireDesc"/>
+		</block>
+
+		<block name="Home Woodstove">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntStoveOldVer1Closed"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Appliances/stove_old" param1="main_mesh"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="EconomicValue" value="444"/>
+		</block>
+
+		<block name="Home Electric Oven">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntWallOven"/>
+			<property name="Texture" value="346,191,341,191,191,191"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="EconomicValue" value="1444"/>
+		</block>
+
+		<block name="Home Microwave Oven">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntMicrowaveOvenVer1Closed"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Appliances/microwave_oven_ver1" param1="main_mesh"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="EconomicValue" value="444"/>
+		</block>
+
+		<block name="Home Gas Grill Open">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntGasGrillOpen"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/LootContainers/GasGrill_EmptyPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="EconomicValue" value="244"/>
+		</block>
+		<block name="Home Gas Grill Closed">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntGasGrillClosed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/LootContainers/GasGrill_FullPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="EconomicValue" value="244"/>
+		</block>
+		<block name="Home Charcoal Grill Open">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntCharcoalGrillOpen"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/LootContainers/Grill_Simple_EmptyPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="EconomicValue" value="244"/>
+		</block>
+		<block name="Home Charcoal Grill Closed">
+			<property name="Extends" value="Home Campfire Helper"/>
+			<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/LootContainers/Grill_Simple_ClosedPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="EconomicValue" value="244"/>
+		</block>
+</append>
+
+	<append xpath="/blocks/block[@name='woodCNRRound']">
+		<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodCNRRound"/> </property>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="rWoodCNRRound">
+			<property name="Extends" value="rWoodMaster"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="corner_round1m"/>
+			<property name="SortOrder2" value="0480"/> <!-- SortShape -->
+			<property name="ImposterExchange" value="imposterBlock" param1="67"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalCNRRound"/> </property>
+			<property name="DowngradeBlock" value="woodCNRRound"/>
+		</block>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="rWoodMetalCNRRound">
+			<property name="Extends" value="rWoodMetalMaster"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="corner_round1m"/>
+			<property name="SortOrder2" value="0480"/> <!-- SortShape -->
+			<property name="ImposterExchange" value="imposterBlock" param1="67"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRound"/> </property>
+			<property name="DowngradeBlock" value="rWoodCNRRound"/>
+		</block>
+	</append>
+
+	<set xpath="/blocks/block[@name='woodCNRRoundTop']/property[@name='Extends']/@value">woodMaster</set>
+	<append xpath="/blocks/block[@name='woodCNRRoundTop']">
+		<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodCNRRoundTop"/> </property>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="rWoodCNRRoundTop">
+			<property name="Extends" value="rWoodMaster"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="corner_rounded"/>
+			<property name="SortOrder2" value="0490"/> <!-- SortShape -->
+			<property name="ImposterExchange" value="imposterBlock" param1="67"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalCNRRoundTop"/> </property>
+			<property name="DowngradeBlock" value="woodCNRRoundTop"/>
+		</block>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="rWoodMetalCNRRoundTop">
+			<property name="Extends" value="rWoodMetalMaster"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="corner_rounded"/>
+			<property name="SortOrder2" value="0490"/> <!-- SortShape -->
+			<property name="ImposterExchange" value="imposterBlock" param1="67"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRoundTop"/> </property>
+			<property name="DowngradeBlock" value="rWoodCNRRoundTop"/>
+		</block>
+	
+	</append>
+
+
+  
+ 
+
+
+ <!-- Canibal
+  <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">8,16</set>
+  <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceFemur']/@count">4,8</set>
+  <set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest' and @name='foodRottingFlesh']/@count">6,12</set>
+
+  
+  <set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy' and @name='resourceFemur']/@count">4,8</set>
+  <set xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy' and @name='resourceFemur']/@count">14,18</set>
+  <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceFemur']/@count">6,12</set> -->
+
+
+  
+</configs>

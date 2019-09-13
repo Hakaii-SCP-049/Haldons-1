@@ -1,0 +1,30 @@
+<configs>
+  <!-- <set xpath="/progression/level/@skill_points_per_level">1</set> 
+  
+  <set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">.2,1</set> -->
+  
+  
+  <!--================================
+	OTHER INCLUSIONS AND FIXES FOR RECIPES - (of course 'fix' is subjective)
+	================================ -->
+
+	<!-- Include Snowberry Seeds Recipe (Locked behind LivingOffTheLand 3) -->
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="plantedSnowberry1"/>
+	</append>
+
+
+	<!-- Include Home Woodstove & All Home Grill Recipes (Locked behind HammerForge 1) -->
+	<append xpath="/progression/perks/perk[@name='perkHammerForge']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="Home Woodstove,Home Gas Grill Open,Home Gas Grill Closed,Home Charcoal Grill Open,Home Charcoal Grill Closed"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="roadRailing,roadRailingPole,roadRailingEnd,roadRailingEnd2,chainLink,chainLinkFenceBottomPole,chainLinkFenceTop,chainLinkFenceTopPole,chainLinkPole,chainLinkCornerTop,chainLinkCornerBottom,chainLinkFenceTopPole2"/>
+	</append>
+
+	<!-- Include Home Appliances, Sinks, and Lighting Recipes, and Wireless Electrical Recipes (Locked behind AdvancedEngineering 1,2,& 3) -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="Home Open Sign"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="Home Microwave Oven"/>
+	</append>
+
+
+</configs>

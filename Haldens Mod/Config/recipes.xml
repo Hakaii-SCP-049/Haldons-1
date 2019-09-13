@@ -1,0 +1,352 @@
+<configs>
+ 
+ <!--================================
+	ADD AS RECIPES - ITEMS ALREADY IN GAME (mostly TableSaw recipes, mostly Decorative)
+	TO-DO: Tweak Attribute/Perk Requirements as needed.
+	TO-DO: Tweak EconomicValue if necessary.
+	================================ -->
+	<append xpath="/recipes">
+		
+		<recipe name="commercialDoor1_v1" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		<recipe name="commercialDoor2_v1" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+		<recipe name="commercialDoor4_v1" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+		<recipe name="houseFrontDoor1_v1" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="houseFrontDoor2_v1" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+
+		<recipe name="doorFrameWhite1" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+		<recipe name="doorFrameWhite2" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+
+		<recipe name="doorFrameMetal1" count="1" craft_area="tablesaw">
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+		<recipe name="doorFrameMetal2" count="1" craft_area="tablesaw">
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+
+		<recipe name="garageDoorHouse" count="1" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="180"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+		</recipe>
+
+		<recipe name="window02" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="8"/>
+			<ingredient name="glassCTRSheet" count="1"/>
+		</recipe>
+
+		<recipe name="shutters1Plate" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+
+		<recipe name="cntHardenedChestSecure" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+		
+
+		<recipe name="cntCardboardBox" count="1">
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceGlue" count="2"/>
+		</recipe>
+
+		<recipe name="cntCoffin" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceNail" count="10"/>
+		</recipe>
+
+		<recipe name="pew_segment01" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="pew_segment02" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="pew_segment03" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="5"/>
+		</recipe>
+
+		<recipe name="storeShelving01Double" count="1">
+			<ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+		<recipe name="storeShelving01Top" count="1">
+			<ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+		<recipe name="storeShelving01TopDouble" count="1">
+			<ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+		
+		<recipe name="cntBookcaseEmpty" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+			<ingredient name="resourceNail" count="4"/>
+		</recipe>
+
+		<recipe name="coffeeTable" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+			<ingredient name="resourceNail" count="4"/>
+		</recipe>
+
+		<recipe name="tableDynamic" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+			<ingredient name="resourceNail" count="4"/>
+		</recipe>
+
+		<recipe name="woodCatwalkWedge" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="8"/>
+		</recipe>
+
+		<recipe name="metalTablePillar0.025CTR" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+		</recipe>
+
+		<recipe name="cntCupboardCornerCNRRed" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="cntCupboardCabinetFullRedTopClosed" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="cntCupboardCabinetOldTopClosed" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="cntCupboardCabinetFullOldTopClosed" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="cntCupboardCornerCNROld" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="cntCabinetOldBottom" count="1" craft_area="tablesaw">
+			<ingredient name="resourceCobblestones" count="4"/>
+			<ingredient name="cntCupboardCabinetOldTopClosed" count="1"/>
+		</recipe>
+		<recipe name="cntCabinetOldCNRRoundFiller" count="1" craft_area="tablesaw">
+			<ingredient name="resourceCobblestones" count="4"/>
+			<ingredient name="cntCupboardCabinetOldTopClosed" count="1"/>
+		</recipe>
+
+
+		<recipe name="woodCrown" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="woodCrownInsideCorner" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		
+		<recipe name="woodWindowTrim" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="woodWindowTrimBottom" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="woodWindowTrimTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="woodWindowTrimSides" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="woodWindowTrimTopFancy" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="doorTrimTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="doorTrim2m" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+
+		<recipe name="decoPillarRoundCentered" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="5"/>
+		</recipe>
+		<recipe name="decoPillarSquareCentered" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="5"/>
+		</recipe>
+
+		<recipe name="roadRailing" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="roadRailingPole" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="roadRailingEnd" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="roadRailingEnd2" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+
+		<recipe name="chainLink" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkFenceBottomPole" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkFenceTop" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkFenceTopPole" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkPole" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkCornerTop" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkCornerBottom" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="chainLinkFenceTopPole2" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+
+		<recipe name="corrugatedMetalPillar0.05" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="corrugatedMetalPillar0.025" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="corrugatedMetalPillar0.05CTR" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="corrugatedMetalPillar0.05SCTR" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="corrugatedMetalPillar0.025CTR" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="corrugatedMetalPillar0.025SCTR" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+
+		<recipe name="concreteBarrier2" count="1" craft_area="cementMixer">
+			<ingredient name="resourceConcreteMix" count="40"/>
+		</recipe>
+
+	<!-- Add recipe for woodPillar50 & woodCNRRound & woodCNRRoundTop which will upgrade through the new reinforced & and woodMetalreinforced versions -->
+
+		<recipe name="woodPillar50" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+
+		<recipe name="woodCNRRound" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="woodCNRRoundTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+
+	<!-- Add recipe for woodQuarter (not upgragable yet) -->
+
+		<recipe name="woodQuarter" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+
+	</append>
+
+
+
+	<!-- Include Snowberry Recipe (Locked behind LivingOffTheLand 3) -->
+	<append xpath="/recipes">
+		<recipe name="plantedSnowberry1" count="1" craft_time="4" tags="learnable">
+			<ingredient name="resourceCropSnowberryPlant" count="4" />
+		</recipe>
+	</append>
+
+
+
+
+
+
+<!--================================
+	ADD CRAFTABLE BEDS THAT CAN RELOCATE
+	================================ -->
+
+
+<!--================================
+	ADD CRAFTABLE & WORKING APPLIANCES (CAMPFIRE SUBSTITUTES)
+	================================ -->
+	
+	<append xpath="/recipes">
+		<recipe name="Home Woodstove" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="160"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="cntStoveOldVer1Closed" count="1"/>
+		</recipe>
+		<recipe name="Home Electric Oven" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="160"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="cntWallOven" count="1"/>
+		</recipe>
+		<recipe name="Home Microwave Oven" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="cntMicrowaveOvenVer1Closed" count="1"/>
+		</recipe>
+		<recipe name="Home Gas Grill Open" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="cntGasGrillOpen" count="1"/>
+		</recipe>
+		<recipe name="Home Gas Grill Closed" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="cntGasGrillClosed" count="1"/>
+		</recipe>
+		<recipe name="Home Charcoal Grill Open" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="cntCharcoalGrillOpen" count="1"/>
+		</recipe>
+		<recipe name="Home Charcoal Grill Closed" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="80"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="cntCharcoalGrillClosed" count="1"/>
+		</recipe>
+
+
+		
+	</append>
+
+<!--================================
+	ADD CRAFTABLE & WORKING LIGHT SOURCES
+	================================ -->
+
+</configs>

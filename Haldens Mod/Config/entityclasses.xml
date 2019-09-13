@@ -1,0 +1,67 @@
+<configs>
+
+<!-- skinning 
+
+  <set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@event='Harvest' and @tag='butcherHarvest' and @name='resourceFeather']/@count">30</set> -->
+
+
+
+<append xpath="/entity_classes">
+
+
+
+<entity_class name="zombieUMATemplateMale" extends="zombieTemplateMale">
+	<property name="EntityType" value="Zombie"/>
+	<property name="Mesh" value="Zombies/zombie01Ragdoll"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityZombie"/>
+	<property name="Parent" value="Enemies"/>
+	<property name="IsEnemyEntity" value="true"/>
+	<property name="HandItem" value="meleeHandZombie01"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
+	<property name="AttackTimeoutDay" value="1.5"/>
+	<property name="AttackTimeoutNight" value="1.1"/>
+	<property name="WalkType" value="7"/>
+	<property name="ModelType" value="ZombieUMA"/>
+	<property name="RootMotion" value="true"/>
+
+	<property name="HasRagdoll" value="true"/>
+	<property name="AvatarController" value="AvatarZombieUMAController"/>
+	<property name="PhysicsBody" value="zombieUMA"/>
+	<property name="HasDeathAnim" value="false"/>
+	<property name="TimeStayAfterDeath" value="30"/>
+	<property name="LootListOnDeath" value="15"/>
+	<property name="CorpseBlock" value="air"/><property name="CorpseBlockChance" value="0"/>
+</entity_class>
+
+<entity_class name="zombieUMATemplateFemale" extends="zombieUMATemplateMale">
+	<property name="Archetype" value="ZombieFemaleUMA"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+</entity_class>
+
+
+
+
+<entity_class name="testtemplate" extends="zombieUMATemplateMale">
+	<property name="Archetype" value="ZombieThot"/>
+	<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+	<property name="ExperienceGain" value="1556"/>
+	<property name="LootListOnDeath" value="82"/>
+</entity_class>
+
+
+
+
+</append>
+</configs>
+
+

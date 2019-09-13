@@ -1,0 +1,39 @@
+<configs>
+
+	<append xpath="/items">
+	
+	
+	
+<item name="resourceBrassHinge">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="brassHinge"/>	
+	<property name="Material" value="MresourceScrapBrassMedium"/>
+	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Weight" value="20"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="Group" value="Resources"/>
+</item>	
+
+<item name="brassValve">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="brassValve"/>	
+	<property name="Material" value="MresourceScrapBrassMedium"/>
+	<property name="Stacknumber" value="250"/> <!-- STK loot -->
+	<property name="Weight" value="40"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="Group" value="Resources"/>
+</item>	
+
+	
+	
+	
+	</append>
+  
+  <set xpath="/items/item[starts-with(@name, 'tool')]/property[@name='Stacknumber']/@value">1</set>  <!-- Tools -->
+
+  
+</configs>
