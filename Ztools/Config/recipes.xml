@@ -1,0 +1,22 @@
+<configs>
+ 
+	
+
+
+	
+	<!-- ======================================================v.1.2================================================================== -->	
+	
+	<append xpath="/recipes">
+		<recipe name="Crowbar" count="1" craft_time="4">
+			<ingredient name="resourceMechanicalParts" count="10" />
+		</recipe>
+	</append>	 
+	
+	
+	
+	<append xpath="/recipes">
+		<recipe name="Alarmclock" count="1" craft_time="4">
+			<ingredient name="resourceMechanicalParts" count="1" />
+		</recipe>
+	</append>	
+</configs>	

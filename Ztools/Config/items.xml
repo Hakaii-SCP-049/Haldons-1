@@ -1,0 +1,118 @@
+<configs>
+	<!-- ======================================================v.1.2================================================================== -->	
+	<append xpath="/items">
+	
+	
+	<item name="Alarmclock">
+		<!--Element appended by: "Ravenhearst_AlarmClock"-->
+		<property name="Tags" value="blunt,melee,light,tool" />
+		<property name="DisplayType" value="melee" />
+		<property name="Class" value="ItemClassTorch" />
+		<property name="HoldType" value="12" />
+		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+			<property name="DropScale" value="6"/>
+		<property name="Material" value="Morganic" />
+		<property name="Stacknumber" value="50" />
+		<!-- STK torch -->
+		<property name="FuelValue" value="25" />
+		<property name="EconomicValue" value="10" />
+
+		<property class="Action1">
+			<property name="Class" value="ThrowAway" />
+			<property name="Delay" value="1.2" />
+			<!-- obsolete if rounds per minute exists -->
+			<property name="Throw_strength_default" value="10" />
+			<property name="Throw_strength_max" value="35" />
+			<property name="Max_strain_time" value="1" />
+			<property name="Sound_start" value="swoosh" />
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="LightValue" value="0.35" />
+		<property name="LightSource" value="lightSource" />
+		<property name="ActivateObject" value="lightSource" />
+		<property name="AlwaysActive" value="true" />
+		<property name="ThrowableDecoy" value="true" />
+		<property name="DistractionTags" value="zombie" />
+
+		<effect_group name="Base Effects" tiered="false">
+			<passive_effect name="MaxRange" operation="base_set" value="2.4" />
+			<passive_effect name="BlockRange" operation="base_set" value="3" />
+			<passive_effect name="EntityDamage" operation="base_set" value="10" />
+			<!-- meleeToolTorch -->
+			<passive_effect name="BlockDamage" operation="base_set" value="5" />
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="51" />
+			<!-- A16 1.17 -->
+			<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest" />
+			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary" />
+			<passive_effect name="HypothermalResist" operation="base_add" value="4" />
+			<passive_effect name="ModSlots" operation="base_set" value="0" />
+
+			<passive_effect name="DistractionRadius" operation="base_set" value="50" />
+			<passive_effect name="DistractionLifetime" operation="base_set" value="15" />
+			<passive_effect name="DistractionStrength" operation="base_set" value="100" />		
+		</effect_group>
+		<property name="SellableToTrader" value="false" />
+	</item>	
+
+
+
+	
+		<item name="Crowbar">
+		<property name="Extends" value="meleeToolWrench" />
+			<property name="CustomIcon" value="7crowbar"/>
+	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="29"/>
+	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Disassemble" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal"/>
+		<property name="Particle_harvesting" value="true" param1="metal"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="1"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="350"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceCloth,resourceScrapPolymers"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="12.5"/> <!-- meleeToolWrench -->
+		<passive_effect name="BlockDamage" operation="base_set" value="18"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.1 -->
+		<passive_effect name="HarvestCount" operation="base_set" value="2.5" tags="salvageHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="2.5" tags="allHarvest"/>
+		
+		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,600" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+	
+	</append>
+  
+
+  
+</configs>
