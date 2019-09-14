@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Working Ovens" />
+        <Description value="This modlet adds a player-made working oven, and adds the ability to collect water from sinks." />
+        <Author value="SylenThunder" />
+        <Version value="1.2" />
+    </ModInfo>
+</xml>

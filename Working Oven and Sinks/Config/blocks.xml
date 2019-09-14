@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/blocks">
+				
+		<block name="PlayerOven">
+			<property name="Class" value="Campfire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="CustomIcon" value="cntWallOven"/>   
+			<property name="Texture" value="346,345,341,345,262,345"/>
+			<property name="DescriptionKey" value="campfireDesc"/>
+			<property name="Group" value="Food/Cooking,Basics,Building"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property class="Workstation">
+				<property name="Modules" value="tools,output,fuel,input"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+				<property name="CraftingAreaRecipes" value="PlayerOven,campfire"/> 
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_campfire" />
+			<property name="CraftActionName" value="lblContextActionCook" />
+			<property name="CraftIcon" value="ui_game_symbol_spatula" />
+			<property name="OpenSound" value="campfire_open" />
+			<property name="CloseSound" value="campfire_close" />
+			<property name="CraftSound" value="campfire_cook_click" />
+			<property name="CraftCompleteSound" value="campfire_complete_item" />
+			<property name="WorkstationJournalTip" value="campfireTip" />
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="0,1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5,10" prob="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+		</block>
+				
+	</append>
+</configs>

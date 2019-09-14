@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<recipe name="PlayerOven" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="toolCookingGrill" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<!-- <ingredient name="resourceInsulator" count="4"/> -->
+		</recipe>
+				
+	</append>
+</configs>
