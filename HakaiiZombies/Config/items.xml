@@ -33,8 +33,8 @@
 	<property name="Explosion.RadiusBlocks" value="5"/>
 	<property name="Explosion.RadiusEntities" value="6"/>		
 		<property name="Velocity" value="18"/>
-		<property name="FlyTime" value="1"/>
-		<property name="LifeTime" value="1"/>
+		<property name="FlyTime" value="2"/>
+		<property name="LifeTime" value="2"/>
 		<property name="CollisionRadius" value="2"/>
 		<property name="Buff" value="buffIllInfection0"/>
 	</property>
