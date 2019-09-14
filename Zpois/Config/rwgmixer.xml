@@ -1,21 +1,55 @@
 <config>
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialOldGroup']">
-		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="1"/>
+		<prefab name="xcostum_Prison(by_Limodur)" max_count="1"/>
+		<prefab name="rh5_norwg_helipad_CptKrunchEdit" max_count="1"/>
+		<prefab name="rad2" max_count="1"/>
+		<prefab name="hakaii1" max_count="1"/>		
 	</append>
 
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialNewGroup']">
-		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="1"/>
+		<prefab name="xcostum_Prison(by_Limodur)" max_count="1"/>
+		<prefab name="rh5_norwg_helipad_CptKrunchEdit" max_count="1"/>
+		<prefab name="rad2" max_count="1"/>
+		<prefab name="hakaii1" max_count="1"/>		
 	</append>
 
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='commercialGroup']">
-		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="1"/>
+		<prefab name="xcostum_Prison(by_Limodur)" max_count="1"/>
+		<prefab name="rh5_norwg_helipad_CptKrunchEdit" max_count="1"/>
+		<prefab name="rad2" max_count="1"/>
+		<prefab name="hakaii1" max_count="1"/>		
 	</append>
 
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='downtownGroup']">
-		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="1"/>
+				<prefab name="xcostum_Prison(by_Limodur)" max_count="1"/>
+		<prefab name="rh5_norwg_helipad_CptKrunchEdit" max_count="1"/>
+		<prefab name="rad2" max_count="1"/>
+		<prefab name="hakaii1" max_count="1"/>
 	</append>
 
 	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']">
-		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="100"/>
+		<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" max_count="1"/>
+		
+		
+		
+		<prefab name="xcostum_TheVillage(by_Stallionsden)" max_count="1"/>
+		<prefab name="xcostum_Prison(by_Limodur)" max_count="1"/>
+		<prefab name="rh5_norwg_helipad_CptKrunchEdit" max_count="1"/>
+		<prefab name="rad2" max_count="1"/>
+		<prefab name="hakaii1" max_count="1"/>
+		<prefab name="Hakaii_water1" max_count="1"/>
+		<prefab name="Hakaii_nepa" max_count="1"/>
+		<prefab name="hakaii_base1" max_count="1"/>
+		<prefab name="ForeverAlone" max_count="1"/>
+
+
+
 	</append>
+	
+	
+	
 </config>
