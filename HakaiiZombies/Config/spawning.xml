@@ -1,0 +1,79 @@
+<configs>
+
+<!-- 
+Here is a template XML format for xpath for A17+ 
+
+This XML file has to be named the same as its vanilla file. If you are editing items.xml, this file needs to be called items.xml
+
+Here are some example xpath:
+	Changes the Light value to 0.45
+  	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='LightValue']/@value">0.45</set>
+	
+	Adds in a new torch at the bottom of the items.xml
+	<append xpath="/items" >
+		<item name="AnothermeleeToolTorch">
+			<property name="Extends" value="meleeToolTorch"/>
+			<property name="LightValue" value="1" />
+		</item>
+	</append>
+	
+	Deletes the torch.
+	<remove xpath="/items/item[@name='meleeToolTorch']" />
+	
+-->
+
+
+
+
+	<insertAfter xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='FriendlyAnimalsForest']">
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombiesAll" />
+
+
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombieGhostTownGroup" gamestage="1" />
+		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="ZombieBikerBarGroup" gamestage="1" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesCave" gamestage="1" />
+
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="EnemyAnimalsForest" gamestage="25" />
+		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombieBusinessManGroup" gamestage="25" />
+		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombieFarmGroup" gamestage="25" />
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombieSoldierGroup" gamestage="25" />
+		<spawn maxcount="2" respawndelay="2" time="Day" entitygroup="ZombiesAll" gamestage="25" />
+	
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='FriendlyAnimalsDesert']">
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombiesAll" />
+
+
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombieGhostTownGroup" gamestage="1" />
+		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="ZombieBikerBarGroup" gamestage="1" />
+		<spawn maxcount="1" respawndelay="2" time="Any" entitygroup="ZombiesHoard" gamestage="1" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesCave" gamestage="1" />
+
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="EnemyAnimalsForest" gamestage="25" />
+		<spawn maxcount="1" respawndelay="14" time="Any" entitygroup="FriendlyAnimalsForest" gamestage="25" />	
+		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombieBusinessManGroup" gamestage="25" />
+		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombieFarmGroup" gamestage="25" />
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombieSoldierGroup" gamestage="25" />
+		<spawn maxcount="2" respawndelay="2" time="Day" entitygroup="ZombiesAll" gamestage="25" />
+		
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']">
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombiesBurntForest" />
+		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesBurntForest" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombiesBurntForest" />
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='FriendlyAnimalsSnow']">
+		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="SnowZombies" />
+		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="SnowZombies" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SnowZombies" />
+	</insertAfter>
+
+
+</configs>

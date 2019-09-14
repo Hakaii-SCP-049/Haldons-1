@@ -1,0 +1,98 @@
+<configs>
+
+<append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']">
+
+		<entity name="animalRabbit"/>
+		<entity name="animalChicken"/>
+		<entity name="muhammad"/>
+
+</append>
+
+<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		<entity name="zombieCheerleader" prob="0.99"/>
+		<entity name="zombieFemaleFat" prob="0.99"/>
+		<entity name="zombieStripper" prob="0.99"/>
+		<entity name="zombieNurse" prob="0.99"/>
+		<entity name="Fauxcahontas" prob="0.99"/>
+
+		<entity name="zombieThot" prob="0.99"/>
+		<entity name="Mexicanweathergirl" prob="0.99"/>
+		<entity name="zombieAnita" prob="0.99"/>
+		<entity name="Vox" prob="0.99"/>
+		
+</append>
+
+
+
+
+<!-- FriendlyAnimals -->
+<insertBefore xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+	<entitygroup name="Bitches" >
+		<entity name="zombieCheerleader" prob="0.3"/>
+		<entity name="zombieFemaleFat" prob="0.1"/>
+		<entity name="zombieStripper" prob="0.3"/>
+		<entity name="zombieNurse" prob="0.3"/>
+		<entity name="Vox"/>
+		<entity name="Fauxcahontas" prob="0.3"/>
+
+		<entity name="zombieThot"/>
+		<entity name="Mexicanweathergirl"/>
+		<entity name="zombieAnita"/>
+
+	</entitygroup>
+</insertBefore>
+
+<insertBefore xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+	<entitygroup name="idiots" >
+
+		<entity name="muhammad"/>
+
+
+	</entitygroup>
+</insertBefore>
+
+<!-- ZombiesCave -->
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']">
+				<entity name="muhammad"/>
+
+
+	</append>
+	
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieOldTimer']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieMarlene']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieArlene']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieJoe']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieBoe']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieMoe']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieFemaleFat']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieSkateboarder']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieSteveCrawler']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieFatHawaiian']"/>
+	
+	
+	
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesCave']">
+		<entity name="muhammad"/>
+	
+	</append>
+
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='animalBear']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieSteveCrawler']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieJoe']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieSteve']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieMoe']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieYo']"/>
+    <remove xpath="/entitygroups/entitygroup[@name='ZombiesCave']/entity[@name='zombieWightFeral']"/>
+
+
+
+<!-- screamers -->
+	<append xpath="/entitygroups/entitygroup[@name='ZombieScouts']">
+				<entity name="Prophetmuhammad"/>
+
+
+	</append>
+
+</configs>
