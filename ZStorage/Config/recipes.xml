@@ -12,7 +12,7 @@
 
 
 	
-	<!-- ======================================================v.1.2================================================================== -->	
+	<!-- Recipies subject to ingredient evaluation -->	
 	
 	<append xpath="/recipes">
 		<recipe name="StorageMunitionsBox" count="1" craft_time="4">
