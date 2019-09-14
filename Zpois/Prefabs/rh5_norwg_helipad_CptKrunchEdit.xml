@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+	<property name="CopyAirBlocks" value="True" />
+	<property name="ExcludeDistantPOIMesh" value="False" />
+	<property name="ExcludePOICulling" value="False" />
+	<property name="DistantPOIYOffset" value="0" />
+	<property name="AllowTopSoilDecorations" value="False" />
+	<property name="DifficultyTier" value="1" />
+	<property name="TraderArea" value="False" />
+	<property name="EditorGroups" value="Military" />
+	<property name="SleeperVolumeSize" value="22, 3, 23#22, 6, 24" />
+	<property name="SleeperVolumeStart" value="0, 1, 1#0, 2, 0" />
+	<property name="SleeperVolumeGroup" value="S_-_Group_Zom_Soldier,8,9,S_-_Group_Zom_Soldier,8,9" />
+	<property name="SleeperIsLootVolume" value="True,True" />
+	<property name="SleeperIsBossVolume" value="False,False" />
+</prefab>
