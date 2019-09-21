@@ -10,21 +10,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -->
 
-		<recipe name="radiated" count="1" craft_time="1" >
-			<ingredient name="resourceClayLump" count="10"/>
-					<ingredient name="foodRottingFlesh" count="5"/>
-	
-		</recipe>
 
-		<recipe name="Radbomb" count="1" craft_time="1" >
-			<ingredient name="mayicresourceScrapGun" count="1"/>
-					<ingredient name="foodRottingFlesh" count="5"/>
-	
-		</recipe>
 		
-		<recipe name="mayicammoCorrosive" count="10" craft_time="1" >
+		<recipe name="mayicammoCorrosive" count="1" craft_time="1" >
 			<ingredient name="mayicresourceScrapAmmo" count="10"/>
-					<ingredient name="foodRottingFlesh" count="1"/>
+					<ingredient name="foodRottingFlesh" count="10"/>
 	
 		</recipe>		
 
