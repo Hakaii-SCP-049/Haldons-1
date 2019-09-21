@@ -1,0 +1,71 @@
+<config>
+<!-- 
+Here is a template XML format for xpath for A17+ 
+
+This XML file has to be named the same as its vanilla file. If you are editing items.xml, this file needs to be called items.xml
+
+Here are some example xpath:
+	Changes the Light value to 0.45
+  	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='LightValue']/@value">0.45</set>
+	
+	Adds in a new torch at the bottom of the items.xml
+	<append xpath="/items" >
+		<item name="AnothermeleeToolTorch">
+			<property name="Extends" value="meleeToolTorch"/>
+			<property name="LightValue" value="1" />
+		</item>
+	</append>
+	
+	Deletes the torch.
+	<remove xpath="/items/item[@name='meleeToolTorch']" />
+	
+-->
+	<append xpath="/items">
+<item name="ammoArrowExploding">
+	<property name="Extends" value="ammoArrowFlaming"/>
+	<property name="DisplayType" value="ammoArrowExploding"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="IsSticky" value="false"/>
+	<property name="FuelValue" value="27"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property class="Action1">
+		<!--<property name="Explosion.ParticleIndex" value="0"/>  no expl. -->
+		<property name="Gravity" value="-5"/>
+		<property name="Explosion.ParticleIndex" value="1"/>
+		<property name="Explosion.RadiusBlocks" value="3"/>
+		<property name="Explosion.RadiusEntities" value="4"/>
+		<property name="Explosion.DamageBonus.stone" value="0.3"/>
+		<property name="Explosion.DamageBonus.metal" value="0.1"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+		<property name="Explosion.DamageBonus.wood" value="0.5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltExploding -->
+		<passive_effect name="BlockDamage" operation="base_set" value="2"/><display_value name="dExDamageBlock" value="2" />
+		<passive_effect name="EntityDamage" operation="base_set" value="250"/><display_value name="dExDamageEntity" value="250" />
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,water"/>
+			<!-- do we have damage modifiers for explosions? -->
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+		<display_value name="dExRadius" value="4"/>
+	</effect_group>
+</item>
+</append>
+
+
+
+	<set xpath="/items/item[@name='gunCompoundBow']/property[@name='Magazine_items']/@value">"ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding"</set>
+
+
+
+
+
+	
+</config>
